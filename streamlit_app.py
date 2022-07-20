@@ -12,6 +12,7 @@ streamlit.header('🍌🥭 Build Your Own Smoothie 🥝🍇')
 
 import pandas
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt") #read csv and pull the data into a dataframe
+my_fruit_list = my_fruit_list.set_index('Fruit')
 #streamlit.dataframe(my_fruit_list) #display the dataframe to streamlit
 
 #interactive widget called Multi-select
